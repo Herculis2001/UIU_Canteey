@@ -62,9 +62,11 @@ import {
                   }}
                 >
                   Sign in
-                </Button>
+                
+                  </Button>
               </Stack>
               <Divider />
+              <a href="./StudentReg">
               <Center>
                 <Button
                   w="100%"
@@ -79,6 +81,7 @@ import {
                   Sign Up
                 </Button>
               </Center>
+              </a>
             </Stack>
           </Box>
         </Stack>
