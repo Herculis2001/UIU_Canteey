@@ -1,2 +1,2 @@
 # UIU_Canteey
-This is the project for Software Engineering Laboratory 
+This is a project for Software Engineering Laboratory 
