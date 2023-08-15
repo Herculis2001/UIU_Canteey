@@ -65,7 +65,6 @@ export default function SignupCard() {
         return alert("password is not matching");
       }
       if (dataa === "200") {
-        // navigate("/");
         return alert("Succesfully Registered");
       }
     } catch (err) {
@@ -86,13 +85,7 @@ export default function SignupCard() {
             Sign Up
           </Heading>
         </Stack>
-        <Box
-          rounded={"lg"}
-          bg={useColorModeValue("#fffffe", "gray.700")}
-          boxShadow={"lg"}
-          p={8}
-          w="393px"
-        >
+        <Box rounded={"lg"} boxShadow={"lg"} p={8} w="393px">
           <Stack spacing={4}>
             <Heading
               fontSize={"4xl"}
@@ -180,7 +173,12 @@ export default function SignupCard() {
             <Stack pt={6}>
               <Text align={"center"}>
                 Already a user?{" "}
-                <Link color={"#272343"} href="/facultylogin">
+                <Link
+                  color={"#272343"}
+                  href="/facultylogin"
+                  _hover={{ textColor: "#ffd803" }}
+                  textDecoration={"underline"}
+                >
                   Login
                 </Link>
               </Text>

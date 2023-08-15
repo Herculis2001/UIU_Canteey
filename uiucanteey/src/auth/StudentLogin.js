@@ -61,13 +61,7 @@ export default function SimpleCard(props) {
             Sign in
           </Heading>
         </Stack>
-        <Box
-          rounded={"lg"}
-          bg={useColorModeValue("#fffffe", "gray.700")}
-          boxShadow={"lg"}
-          p={8}
-          w="393px"
-        >
+        <Box rounded={"lg"} boxShadow={"lg"} p={8} w="393px">
           <Stack spacing={4}>
             <Heading
               fontSize={"4xl"}
@@ -105,7 +99,6 @@ export default function SimpleCard(props) {
                 <Button
                   w="100%"
                   maxW={"md"}
-                  variant={"outline"}
                   bg={"#e3f6f5"}
                   textColor={"#272343"}
                   _hover={{

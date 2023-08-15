@@ -13,7 +13,6 @@ import {
   Center,
   Divider,
 } from "@chakra-ui/react";
-
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -65,13 +64,7 @@ export default function SimpleCard(props) {
             Sign in
           </Heading>
         </Stack>
-        <Box
-          rounded={"lg"}
-          bg={useColorModeValue("#fffffe", "gray.700")}
-          boxShadow={"lg"}
-          p={8}
-          w="393px"
-        >
+        <Box rounded={"lg"} boxShadow={"lg"} p={8} w="393px">
           <Stack spacing={4}>
             <Heading
               fontSize={"4xl"}
@@ -91,12 +84,8 @@ export default function SimpleCard(props) {
                 onChange={(e) => setPassword(e.target.value)}
               />
             </FormControl>
-            <Stack spacing={10}>
-              <Stack
-                direction={{ base: "column", sm: "row" }}
-                align={"start"}
-                justify={"space-between"}
-              ></Stack>
+            <Stack spacing={5}>
+              <Stack></Stack>
               <Button
                 onClick={loginhandler}
                 bg={"#ffd803"}
@@ -114,6 +103,8 @@ export default function SimpleCard(props) {
                 <Link
                   color={"#33272a"}
                   href="https://forms.gle/UYMAhXgRyqdKVf3h7"
+                  _hover={{ textColor: "#ffd803" }}
+                  textDecoration={"underline"}
                 >
                   Click Here
                 </Link>
@@ -125,7 +116,6 @@ export default function SimpleCard(props) {
                   <Button
                     w="100%"
                     maxW={"md"}
-                    variant={"outline"}
                     bg={"#e3f6f5"}
                     textColor={"#272343"}
                     _hover={{

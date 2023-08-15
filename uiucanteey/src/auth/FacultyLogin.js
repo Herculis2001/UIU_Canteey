@@ -11,7 +11,6 @@ import {
   Divider,
   Center,
 } from "@chakra-ui/react";
-
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -63,13 +62,7 @@ export default function SimpleCard(props) {
             Sign in
           </Heading>
         </Stack>
-        <Box
-          rounded={"lg"}
-          bg={useColorModeValue("#fffffe", "gray.700")}
-          boxShadow={"lg"}
-          p={8}
-          w="393px"
-        >
+        <Box rounded={"lg"} boxShadow={"lg"} p={8} w="393px">
           <Stack spacing={4}>
             <Heading
               fontSize={"4xl"}
