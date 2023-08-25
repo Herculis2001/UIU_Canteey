@@ -10,12 +10,12 @@ import {
 import { DeleteIcon, EditIcon } from "@chakra-ui/icons";
 import { doc, deleteDoc } from "firebase/firestore";
 import { db } from "../../firebase/firebase";
-import Solid from "../../Images/icons8-vegetarian-food-symbol-48.png";
-import Drinks from "../../Images/icons8-non-vegetarian-food-symbol-48.png";
+// import Solid from "../../Images/icons8-vegetarian-food-symbol-48.png";
+// import Drinks from "../../Images/icons8-non-vegetarian-food-symbol-48.png";
 
 function ProductAddToCart(props) {
   return (
-    <Flex className="flex-div" gap="60px" alignItems="stretch" flexWrap="wrap">
+    <Flex className="flex-div" gap="20px" alignItems="stretch" flexWrap="wrap">
       {props.itm.length === 0 && (
         <Box>
           <h1>No Items</h1>
@@ -47,12 +47,12 @@ function ProductAddToCart(props) {
               src={data.image}
               alt={`Picture of ${data.name}`}
               roundedTop="lg"
-              maxW="sm"
+              maxW="fit"
               maxH="sm"
               objectFit="cover"
             />
 
-            <Box p="6">
+            <Box p="3">
               <Box d="flex" alignItems="baseline">
                 {data.isNew && (
                   <Badge
@@ -93,7 +93,7 @@ function ProductAddToCart(props) {
                   {data.remain}/{data.quantity}
                 </Box>
               </Flex>
-              <Flex justifyContent="space-between" alignContent="center">
+              {/* <Flex justifyContent="space-between" alignContent="center">
                 <Box fontSize="2xl">
                   <Box as="span" color={"gray.600"} fontSize="lg"></Box>
                   {data.type === "Solid" ? (
@@ -102,7 +102,7 @@ function ProductAddToCart(props) {
                     <Image src={Drinks}></Image>
                   )}
                 </Box>
-              </Flex>
+              </Flex> */}
               <Flex justifyContent="space-between" alignContent="center" mt="2">
                 <Box fontSize="2xl">
                   <Tooltip
@@ -130,6 +130,7 @@ function ProductAddToCart(props) {
                       }}
                     />
                   </Tooltip>
+                  &nbsp;
                   <Tooltip
                     label="Edit Item"
                     bg="white"

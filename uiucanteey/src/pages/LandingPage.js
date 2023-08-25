@@ -11,7 +11,7 @@ import Hero from "./Hero";
 export default function LandingPage() {
   return (
     <>
-      <Box bg={useColorModeValue("#e3f6f5")} px={4}>
+      {/* <Box bg={useColorModeValue("#e3f6f5")} px={4}>
         <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
           <Box textColor={"#272343"}>UIU Canteey</Box>
 
@@ -61,7 +61,13 @@ export default function LandingPage() {
             </Stack>
           </Flex>
         </Flex>
-      </Box>
+      </Box> */}
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
       <Box>
         <Hero />
       </Box>

@@ -7,7 +7,6 @@ import {
   Stack,
   Button,
   Heading,
-  useColorModeValue,
   Divider,
   Center,
 } from "@chakra-ui/react";
@@ -49,12 +48,7 @@ export default function SimpleCard(props) {
     }
   };
   return (
-    <Flex
-      minH={"100vh"}
-      align={"center"}
-      justify={"center"}
-      bg={useColorModeValue("#fffffe")}
-    >
+    <Flex minH={"100vh"} align={"center"} justify={"center"} bg={"fffffe"}>
       <Stack spacing={8} mx={"auto"} maxW={"lg"} py={12} px={6}>
         <Stack align={"center"}>
           <Heading fontSize={"4xl"} textColor={"#272343"}>

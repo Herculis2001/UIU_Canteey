@@ -1,7 +1,7 @@
 import { Flex, Circle, Box, Image, Badge, SimpleGrid } from "@chakra-ui/react";
 
-import Solid from "../../Images/icons8-vegetarian-food-symbol-48.png";
-import Drinks from "../../Images/icons8-non-vegetarian-food-symbol-48.png";
+// import Solid from "../../Images/icons8-vegetarian-food-symbol-48.png";
+// import Drinks from "../../Images/icons8-non-vegetarian-food-symbol-48.png";
 import "./Order.css";
 
 function ProductAddToCart(props) {
@@ -95,7 +95,7 @@ function ProductAddToCart(props) {
                       {data.remain}/{data.quantity}
                     </Box>
                   </Flex>
-                  <Flex justifyContent="space-between" alignContent="center">
+                  {/* <Flex justifyContent="space-between" alignContent="center">
                     <Box fontSize="2xl">
                       <Box as="span" color={"gray.600"} fontSize="lg"></Box>
                       {data.type === "Solid" ? (
@@ -104,7 +104,7 @@ function ProductAddToCart(props) {
                         <Image src={Drinks}></Image>
                       )}
                     </Box>
-                  </Flex>
+                  </Flex> */}
                   <Flex
                     justifyContent="space-between"
                     alignContent="center"
