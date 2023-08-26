@@ -9,7 +9,8 @@ import canteenData from "../assets/canteen.json"
 export default function CallToActionWithIllustration() {
   return (
     <>
-    <Container maxW={"full"} minH="70vh" display="flex" alignItems="top" >
+    <Container maxW={"full"} minH="70vh" display="flex" alignItems="top" backgroundColor={"#f9bc60"}  _hover={{ bg: useColorModeValue("#e3f6f5"), }} >
+
         <Stack flex={1} textAlign={"center"} spacing={{ base: 8, md: 8 }} my={20}>
           <br/><br/>
           <Heading
@@ -37,9 +38,8 @@ export default function CallToActionWithIllustration() {
               src={pic}
               alt="food_image"
               align="top"
-              
-            mb={10}
-            mr={10}
+              mb={10}
+              mr={10}
             />
           </Flex>
         </Stack>
@@ -48,13 +48,15 @@ export default function CallToActionWithIllustration() {
    
 
 
-    <Container maxW={"full"} minH="70vh" display="flex" alignItems="top" >
+    <Container maxW={"full"} minH="70vh" display="flex" alignItems="top" backgroundColor={"#f9bc60"}  _hover={{ bg: useColorModeValue("#e3f6f5"), }}>
+
           <Stack>
                 <Lottie
                   animationData={animationData}
                   style={{ height: 500, width: 700 }}
                 />
           </Stack>
+
 
         <Stack flex={1} textAlign={"center"} spacing={{ base: 8, md: 8 }} mx={10} my={20}>
         <Heading
@@ -73,52 +75,56 @@ export default function CallToActionWithIllustration() {
 
           <a href="/facultylogin">
                   <Button
-                    bg={"#ffd803"}
+                    bg={"#f9bc60"}
                     rounded={"md"}
                     textColor={"#272343"}
                     _hover={{
                       textDecoration: "none",
-                      bg: useColorModeValue("#bae8e8"),
+                      bg: useColorModeValue("#e3f6f5"),
                     }}
                   >
                     Faculty Login
                   </Button>
                 </a>
+
         </Stack>
       </Container>
 
 
 
 
-      <Container maxW={"full"} minH="70vh" display="flex" alignItems="top" >
-            <Stack flex={1} textAlign={"center"} spacing={{ base: 8, md: 8 }} mx={10} my={20}>
-              <Heading
-                fontWeight={600}
-                fontSize={{ base: "3xl", sm: "4xl", md: "6xl" }}
-                lineHeight={"110%"}
-              >
-                <Text as={"span"} color={"#33272a"}>
-                  Student
-                </Text>
-              </Heading>
-              <Text fontSize={{ base: "2xl", sm: "2xl", md: "2xl" }} color={"#594a4e"} textAlign={"center"}>
-              Browse the menu and see available foods and their prices.
+      <Container maxW={"full"} minH="70vh" display="flex" alignItems="top" backgroundColor={"#f9bc60"}  _hover={{ bg: useColorModeValue("#e3f6f5"), }}>
+          
+          <Stack flex={1} textAlign={"center"} spacing={{ base: 8, md: 8 }} mx={10} my={20}>
+            <Heading
+              fontWeight={600}
+              fontSize={{ base: "3xl", sm: "4xl", md: "6xl" }}
+              lineHeight={"110%"}
+            >
+              <Text as={"span"} color={"#33272a"}>
+                Student
               </Text>
-    
-              <a href="/studentlogin">
-                    <Button
-                      bg={"#ffd803"}
-                      rounded={"md"}
-                      textColor={"#272343"}
-                      _hover={{
-                        textDecoration: "none",
-                        bg: useColorModeValue("#bae8e8"),
-                      }}
-                    >
-                      Student Login
-                    </Button>
-                  </a>
-            </Stack>
+            </Heading>
+  
+            
+            <Text fontSize={{ base: "2xl", sm: "2xl", md: "2xl" }} color={"#594a4e"} textAlign={"center"}>
+             Browse the menu and see available foods and their prices.
+            </Text>
+  
+            <a href="/studentlogin">
+                  <Button
+                    bg={"#f9bc60"}
+                    rounded={"md"}
+                    textColor={"#272343"}
+                    _hover={{
+                      textDecoration: "none",
+                      bg: useColorModeValue("#e3f6f5"),
+                    }}
+                  >
+                    Student Login
+                  </Button>
+                </a>
+          </Stack>
 
             <Stack>
                   <Lottie
@@ -126,64 +132,76 @@ export default function CallToActionWithIllustration() {
                     style={{ height: 500, width: 700 }}
                   />
             </Stack>
+
         </Container>
   
 
 
 
-        <Container maxW={"full"}  minH="70vh" display="flex" alignItems="top" >
+        <Container maxW={"full"}  minH="70vh" display="flex" alignItems="top" backgroundColor={"#f9bc60"}  _hover={{ bg: useColorModeValue("#e3f6f5"), }}>
+
             <Stack>
                   <Lottie
                     animationData={canteenData}
                     style={{ height: 400, width: 600 }}
                   />
+              
             </Stack>
 
-            <Stack flex={1} textAlign={"center"} spacing={{ base: 8, md: 8 }} mx={10} my={20}>
-            <Heading
-                fontWeight={600}
-                fontSize={{ base: "3xl", sm: "4xl", md: "6xl" }}
-                lineHeight={"110%"}
-              >
-                <Text as={"span"} color={"#33272a"}>
-                  Canteen Owner
-                </Text>
-              </Heading>
-              <Text fontSize={{ base: "2xl", sm: "2xl", md: "2xl" }} color={"#594a4e"} textAlign={"center"}>
-            Want to add a canteen of yours to the system? Log in as a canteen owner and experience the efficient way to manage your orders and foods.
+          <Stack flex={1} textAlign={"center"} spacing={{ base: 8, md: 8 }} mx={10} my={20}>
+          <Heading
+              fontWeight={600}
+              fontSize={{ base: "3xl", sm: "4xl", md: "6xl" }}
+              lineHeight={"110%"}
+            >
+              <Text as={"span"} color={"#33272a"}>
+                Canteen Owner
               </Text>
-    
-              <a href="/ownerlogin">
-                    <Button
-                      bg={"#ffd803"}
-                      rounded={"md"}
-                      textColor={"#272343"}
-                      _hover={{
-                        textDecoration: "none",
-                        bg: useColorModeValue("#bae8e8"),
-                      }}
-                    >
-                      Canteen Login
-                    </Button>
-                  </a>
-
-            </Stack>
+            </Heading>
+  
+            
+            <Text fontSize={{ base: "2xl", sm: "2xl", md: "2xl" }} color={"#594a4e"} textAlign={"center"}>
+           Want to add a canteen of yours to the system? Log in as a canteen owner and experience the efficient way to manage your orders and foods.
+            </Text>
+  
+            <a href="/ownerlogin">
+                  <Button
+                    bg={"#f9bc60"}
+                    rounded={"md"}
+                    textColor={"#272343"}
+                    _hover={{
+                      textDecoration: "none",
+                      bg: useColorModeValue("#e3f6f5"),
+                    }}
+                  >
+                    Canteen Login
+                  </Button>
+                </a>
+          </Stack>
         </Container>
 
 
-        <Stack textAlign={"center"} >
-          <Heading
-              fontWeight={600}
-              fontSize={{  lg: "6xl" }}
-            >
-              <Text as={"span"} color={"#33272a"}>
+        
+
+        <Container
+          maxW={"full"}
+          minH="70vh"
+          display="flex"
+          alignItems="center"
+          justifyContent="center"
+          backgroundColor={"#f9bc60"}
+          _hover={{ bg: useColorModeValue("#e3f6f5") }}
+        >
+          
+          <Stack textAlign="center" position="absolute" top="83%" transform="translateY(-50%)">
+            <Heading fontWeight={600} fontSize={{ lg: "6xl" }}>
+              <Text as="span" color={"#33272a"}>
                 About Us
               </Text>
-          </Heading>
-        </Stack>
-
-
-    <Container maxW={"full"} minH="70vh" display="flex" alignItems="top" >
+            </Heading>
+          </Stack>
+        
+        
         <Stack flex={1} textAlign={"center"} spacing={{ base: 8, md: 8 }} mx={10} my={10}>
           <br/>
           <Text fontSize={{ base: "2xl", sm: "2xl", md: "2xl" }} color={"#594a4e"} textAlign={"center"}>
@@ -205,6 +223,7 @@ export default function CallToActionWithIllustration() {
               />
             </Flex>
         </Stack>
+
     </Container>
 
 
