@@ -9,9 +9,11 @@ import {
   Heading,
   Divider,
   Center,
+  Image,
 } from "@chakra-ui/react";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import pic from "../Images/blob-scene-haikei.png";
 
 export default function SimpleCard(props) {
   const navigate = useNavigate();
@@ -48,14 +50,23 @@ export default function SimpleCard(props) {
     }
   };
   return (
-    <Flex minH={"100vh"} align={"center"} justify={"center"} bg={"fffffe"}>
+    // <Flex minH={"100vh"} align={"center"} justify={"center"} bg={"fffffe"}>
+
+    <Flex
+      minH={"100vh"}
+      align={"center"}
+      justify={"center"}
+      backgroundImage={pic}
+      backgroundPosition={"center"}
+      backgroundSize={"1540px"}
+    >
       <Stack spacing={8} mx={"auto"} maxW={"lg"} py={12} px={6}>
         <Stack align={"center"}>
           <Heading fontSize={"4xl"} textColor={"#272343"}>
             Sign in
           </Heading>
         </Stack>
-        <Box rounded={"lg"} boxShadow={"lg"} p={8} w="393px">
+        <Box rounded={"lg"} boxShadow={"lg"} p={8} w="393px" bg={"#fffffe"}>
           <Stack spacing={4}>
             <Heading
               fontSize={"4xl"}
@@ -66,13 +77,18 @@ export default function SimpleCard(props) {
             </Heading>
             <FormControl id="email">
               <FormLabel>Email</FormLabel>
-              <Input type="email" onChange={(e) => setEmail(e.target.value)} />
+              <Input
+                type="email"
+                onChange={(e) => setEmail(e.target.value)}
+                bg={"#e3f6f5"}
+              />
             </FormControl>
             <FormControl id="password">
               <FormLabel>Password</FormLabel>
               <Input
                 type="password"
                 onChange={(e) => setPassword(e.target.value)}
+                bg={"#e3f6f5"}
               />
             </FormControl>
             <Stack spacing={10}>

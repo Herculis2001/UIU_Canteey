@@ -197,7 +197,7 @@ export default function Menu() {
             Filter <Icon as={MdFilterAlt} />
           </FormLabel>
           <Select
-            placeholder="Select option"
+            placeholder="All Categories"
             w="2xl"
             onChange={handleFilter}
             bg={"#e3f6f5"}

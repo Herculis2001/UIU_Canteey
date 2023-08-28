@@ -16,6 +16,7 @@ import {
 } from "@chakra-ui/react";
 import { useState } from "react";
 import { ViewIcon, ViewOffIcon } from "@chakra-ui/icons";
+import pic from "../Images/blob-scene-haikei.png";
 
 export default function SignupCard() {
   let name, value;
@@ -87,7 +88,9 @@ export default function SignupCard() {
       minH={"100vh"}
       align={"center"}
       justify={"center"}
-      bg={useColorModeValue("#fffffe")}
+      backgroundImage={pic}
+      backgroundPosition={"center"}
+      backgroundSize={"1900px"}
     >
       <Stack spacing={8} mx={"auto"} maxW={"lg"} py={12} px={6}>
         <Stack align={"center"}>
@@ -107,7 +110,12 @@ export default function SignupCard() {
             <HStack>
               <FormControl id="name" isRequired>
                 <FormLabel>Name</FormLabel>
-                <Input type="text" name="name" onChange={handleInputs} />
+                <Input
+                  type="text"
+                  name="name"
+                  onChange={handleInputs}
+                  bg={"#e3f6f5"}
+                />
               </FormControl>
             </HStack>
 
@@ -119,22 +127,38 @@ export default function SignupCard() {
                 maxLength="10"
                 minLength="10"
                 onChange={handleInputs}
+                bg={"#e3f6f5"}
               />
             </FormControl>
 
             <FormControl id="email" isRequired>
               <FormLabel>Email</FormLabel>
-              <Input type="text" name="email" onChange={handleInputs} />
+              <Input
+                type="text"
+                name="email"
+                onChange={handleInputs}
+                bg={"#e3f6f5"}
+              />
             </FormControl>
 
             <FormControl id="phone_no" isRequired>
               <FormLabel>Phone No.</FormLabel>
-              <Input type="number" name="phone_no" onChange={handleInputs} />
+              <Input
+                type="number"
+                name="phone_no"
+                onChange={handleInputs}
+                bg={"#e3f6f5"}
+              />
             </FormControl>
 
             <FormControl id="canteen_name" isRequired>
               <FormLabel>Canteen Name</FormLabel>
-              <Input type="text" name="canteen_name" onChange={handleInputs} />
+              <Input
+                type="text"
+                name="canteen_name"
+                onChange={handleInputs}
+                bg={"#e3f6f5"}
+              />
             </FormControl>
 
             <FormControl id="password" isRequired>
@@ -144,6 +168,7 @@ export default function SignupCard() {
                   type={showPassword ? "text" : "password"}
                   name="password"
                   onChange={handleInputs}
+                  bg={"#e3f6f5"}
                 />
                 <InputRightElement h={"full"}>
                   <Button
@@ -164,6 +189,7 @@ export default function SignupCard() {
                   type={showPassword ? "text" : "password"}
                   name="cpassword"
                   onChange={handleInputs}
+                  bg={"#e3f6f5"}
                 />
                 <InputRightElement h={"full"}>
                   <Button

@@ -5,8 +5,10 @@ import {
   useColorModeValue,
   Stack,
   ButtonGroup,
+  Image,
 } from "@chakra-ui/react";
 import Hero from "./Hero";
+import logo from "../Images/logo.png";
 
 export default function LandingPage() {
   return (
@@ -62,12 +64,19 @@ export default function LandingPage() {
           </Flex>
         </Flex>
       </Box> */}
+      <Box bg={useColorModeValue("#bae8e8")} px={4}>
+        <Flex h={20} alignItems={"center"} justifyContent={"center"}>
+          <Box textColor={"#272343"}>
+            <Image src={logo} w="80px" h="80px" alt="Logo" />
+          </Box>
+        </Flex>
+      </Box>
+      {/* <br />
       <br />
       <br />
       <br />
       <br />
-      <br />
-      <br />
+      <br /> */}
       <Box>
         <Hero />
       </Box>

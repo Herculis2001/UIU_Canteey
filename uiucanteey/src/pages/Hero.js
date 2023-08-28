@@ -18,7 +18,15 @@ import canteenData from "../assets/canteen.json";
 export default function CallToActionWithIllustration() {
   return (
     <>
-      <Container maxW={"full"} minH="70vh" display="flex" alignItems="top">
+      {/* <Container maxW={"full"} minH="70vh" display="flex" alignItems="top"> */}
+      <Container
+        maxW={"full"}
+        minH="70vh"
+        display="flex"
+        alignItems="top"
+        backgroundColor={"#bae8e8"}
+        _hover={{ bg: useColorModeValue("#e3f6f5") }}
+      >
         <Stack
           flex={1}
           textAlign={"center"}
@@ -69,7 +77,15 @@ export default function CallToActionWithIllustration() {
         </Stack>
       </Container>
 
-      <Container maxW={"full"} minH="70vh" display="flex" alignItems="top">
+      {/* <Container maxW={"full"} minH="70vh" display="flex" alignItems="top"> */}
+      <Container
+        maxW={"full"}
+        minH="70vh"
+        display="flex"
+        alignItems="top"
+        backgroundColor={"#bae8e8"}
+        _hover={{ bg: useColorModeValue("#e3f6f5") }}
+      >
         <Stack>
           <Lottie
             animationData={animationData}
@@ -120,7 +136,15 @@ export default function CallToActionWithIllustration() {
         </Stack>
       </Container>
 
-      <Container maxW={"full"} minH="70vh" display="flex" alignItems="top">
+      {/* <Container maxW={"full"} minH="70vh" display="flex" alignItems="top"> */}
+      <Container
+        maxW={"full"}
+        minH="70vh"
+        display="flex"
+        alignItems="top"
+        backgroundColor={"#bae8e8"}
+        _hover={{ bg: useColorModeValue("#e3f6f5") }}
+      >
         <Stack
           flex={1}
           textAlign={"center"}
@@ -168,7 +192,15 @@ export default function CallToActionWithIllustration() {
         </Stack>
       </Container>
 
-      <Container maxW={"full"} minH="70vh" display="flex" alignItems="top">
+      {/* <Container maxW={"full"} minH="70vh" display="flex" alignItems="top"> */}
+      <Container
+        maxW={"full"}
+        minH="70vh"
+        display="flex"
+        alignItems="top"
+        backgroundColor={"#bae8e8"}
+        _hover={{ bg: useColorModeValue("#e3f6f5") }}
+      >
         <Stack>
           <Lottie
             animationData={canteenData}
@@ -218,15 +250,41 @@ export default function CallToActionWithIllustration() {
         </Stack>
       </Container>
 
-      <Stack textAlign={"center"}>
+      {/* <Stack
+        textAlign={"center"}
+        backgroundColor={"#f9bc60"}
+        _hover={{ bg: useColorModeValue("#e3f6f5") }}
+      >
         <Heading fontWeight={600} fontSize={{ lg: "6xl" }}>
           <Text as={"span"} color={"#33272a"}>
             About Us
           </Text>
         </Heading>
-      </Stack>
+      </Stack> */}
 
-      <Container maxW={"full"} minH="70vh" display="flex" alignItems="top">
+      {/* <Container maxW={"full"} minH="70vh" display="flex" alignItems="top"> */}
+      <Container
+        maxW={"full"}
+        minH="70vh"
+        display="flex"
+        alignItems="center"
+        justifyContent="center"
+        backgroundColor={"#bae8e8"}
+        _hover={{ bg: useColorModeValue("#e3f6f5") }}
+      >
+        <Stack
+          textAlign="center"
+          position="absolute"
+          top="83%"
+          transform="translateY(-50%)"
+        >
+          <Heading fontWeight={600} fontSize={{ lg: "6xl" }}>
+            <Text as="span" color={"#33272a"}>
+              About Us
+            </Text>
+          </Heading>
+        </Stack>
+
         <Stack
           flex={1}
           textAlign={"center"}
