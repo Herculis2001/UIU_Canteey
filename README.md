@@ -1,2 +1,19 @@
-# UIU_Canteey
-UIU Canteey involves the efficient operation and oversight of a cafeteria. It encompasses various tasks such as menu planning, food procurement, storage, preparation, and serving. UIU Canteey aims to provide nutritious and diverse meal options, maintain food safety and hygiene standards, optimize resource utilization, and ensure a pleasant dining experience for patrons. This often includes monitoring inventory, staying attuned to customer preferences. Through streamlined canteen management, organizations can foster a healthy and productive environment while catering to the culinary needs of their community.
+# UIU Canteey
+UIU Canteey is a web-based application designed to facilitate the ordering process for users at UIU canteen built with ReactJs, Express, MongoDB and NodeJs. This application has an user-friendly interface for students to browse the menu and for faculties to place orders, make payments, track their orders. It also provides an efficient and streamlined system for canteen staff to manage incoming orders, stay updated with menu changes, and process payments seamlessly.
+
+## Features
+- View menu
+- Order food
+- Order list update
+- Order list
+- Add food category
+- Add food item
+  
+## TOOLS/LANGUAGE/FRAMEWORK USED
+- Language: JavaScript
+- Framework: React
+- Tool: VS Code, MongoDb Compass
+- Version Control: Github
+- API: ExpressJs
+
+
