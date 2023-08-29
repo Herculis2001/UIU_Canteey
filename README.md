@@ -5,7 +5,7 @@ UIU Canteey is a web-based application designed to facilitate the ordering proce
 - View menu
 - Order food
 - Order list update
-- Order list
+- View Order list
 - Add food category
 - Add food item
   
@@ -16,4 +16,41 @@ UIU Canteey is a web-based application designed to facilitate the ordering proce
 - Version Control: Github
 - API: ExpressJs
 
+## Installation
 
+### Prerequisites
+- NodeJs
+- MongoDB or MongoDB Compass
+- ExpressJs
+  
+### Steps
+
+1. **Clone the repository:**
+  ```bash
+   https://github.com/Herculis2001/UIU_Canteey.git
+```
+
+2. **Install dependencies:**
+
+Navigate to the project directory and run the following command in each of the directories: `frontend`, `backend`
+
+```bash
+npm install
+```
+
+3. **Start the backend server:**
+```bash
+nodemon ./index.tsx
+```
+
+4. **Start the app (frontend):**
+```bash
+npm start
+```
+## Authors
+
+- [@ShahRiarKhan55](https://github.com/ShahRiarKhan55)
+- [@Herculis2001 ](https://github.com/Herculis2001)
+- [@Sakhter201 ](https://github.com/Sakhter201)
+
+  
