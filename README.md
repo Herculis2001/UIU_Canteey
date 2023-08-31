@@ -47,6 +47,37 @@ nodemon ./index.tsx
 ```bash
 npm start
 ```
+
+## 📷 Screenshots
+
+<div style="display: flex; flex-direction: row; gap: 10px; justify-content: center;">
+  <img src="screenshots/Screenshot 2023-08-30 221404.png" alt="Landing page" style="width: 60%; margin: 0;">
+</div>
+
+<div style="display: flex; flex-direction: row; gap: 10px; justify-content: center;">
+  <img src="screenshots/Screenshot 2023-08-31 121941.png" alt="Sign in" style="width: 60%; margin: 0;">
+</div>
+
+<div style="display: flex; flex-direction: row; gap: 10px; justify-content: center;">
+  <img src="screenshots/Screenshot 2023-08-31 124742.png" alt="Menu item" style="width: 60%; margin: 0;">
+</div>
+
+<div style="display: flex; flex-direction: row; gap: 10px; justify-content: center;">
+  <img src="screenshots/Screenshot 2023-08-31 124837.png" alt="Billing" style="width: 60%; margin: 0;">
+</div>
+
+<div style="display: flex; flex-direction: row; gap: 10px; justify-content: center;">
+  <img src="screenshots/Screenshot 2023-08-31 124926.png" alt="Add item" style="width: 60%; margin: 0;">
+</div>
+
+<div style="display: flex; flex-direction: row; gap: 10px; justify-content: center;">
+  <img src="screenshots/Screenshot 2023-08-31 122951.png" alt="Dashboard" style="width: 60%; margin: 0;">
+</div>
+
+<div style="display: flex; flex-direction: row; gap: 10px; justify-content: center;">
+  <img src="screenshots/Screenshot 2023-08-31 122158.png" alt="Current Order" style="width: 60%; margin: 0;">
+</div>
+
 ## Authors
 
 - [@ShahRiarKhan55](https://github.com/ShahRiarKhan55)
